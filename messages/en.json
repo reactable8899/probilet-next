@@ -1,0 +1,82 @@
+{
+  "lang": "EN",
+  "header": {
+    "nav": [
+      "Management",
+      "History",
+      "Teams",
+      "Results",
+      "Cooperation",
+      "Gallery",
+      "Contacts",
+      "About us",
+      "Main",
+      "Sport",
+      "News",
+      "Services",
+      "Equipment",
+      "Maps",
+      "Calendar"
+    ]
+  },
+  "news": {
+    "title": "News"
+  },
+  "review": {
+    "title": "Reviews",
+    "desc": "Don't miss the chance to feel like a bird!"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "equipment": {
+    "title": "Equipment",
+    "description": "Description",
+    "found": "Found",
+    "busket": "Busket",
+    "noProducts": "There are no products",
+    "checkout": "Checkout",
+    "search": "Search",
+    "price": "Price",
+    "from": "from",
+    "to": "to",
+    "allCategories": "All categories",
+    "AllBrands": "All brands",
+    "sort": "Sort",
+    "popular": "Popular",
+    "cheapest": "Cheapest",
+    "expensive": "Expensive",
+    "addToCart": "Add to cart",
+    "productAddedToCart": "Product added to cart",
+    "brands": "Brands",
+    "categories": "Categories"
+  },
+  "btn": {
+    "moreDetails": "More details",
+    "viewAll": "View all"
+  },
+  "footer": {
+    "phone": "Phone",
+    "email": "E-mail",
+    "address": "Address",
+    "sponsors": "Sponsors",
+    "title3": "©"
+  },
+  "shortAbout": {
+    "trainersCount": "Trainers count",
+    "membersCount": "Members count"
+  },
+  "breadcrumbs": {
+    "main": "Main",
+    "news": "News",
+    "review": "Review",
+    "sport": "Sport",
+    "service": "Services",
+    "maps": "Maps",
+    "calendar": "Calendar",
+    "results": "Results",
+    "team": "Team",
+    "gallery": "Gallery",
+    "product": "Products"
+  }
+}
