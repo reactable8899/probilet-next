@@ -27,3 +27,26 @@ export function handleSearchParams(
 export function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+export const customUpdateSearchParams = (newParams:any) => {
+  const searchParams = new URLSearchParams(window.location.search);
+
+  Object.keys(newParams).forEach((key) => {
+    if (newParams[key] !== undefined) {
+      searchParams.set(key, newParams[key]);
+    } else {
+      searchParams.delete(key);
+    }
+  });
+
+  window.history.replaceState(null, '', `${window.location.pathname}?${searchParams.toString()}`);
+};
+
+export const formatPrice = (price: number) => {
+  return price
+    .toLocaleString('en-US', {
+      maximumFractionDigits: 0,
+      minimumFractionDigits: 0,
+    })
+    .replace(/\,/g, ' ');
+};
