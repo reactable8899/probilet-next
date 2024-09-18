@@ -1,16 +1,16 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { DatesFilter } from "@/components/sections/ArenaSection/DatesFilter";
 import { PriceFilter } from "@/components/sections/ArenaSection/PriceFilter";
-import MenuIcon from "@/public/icons/menu.svg";
 import { useQueryParams } from "@/hooks/useQueryParams";
 import { useGetApiV1EventEventgroupIdPaged } from "@/api/requests/event/event";
 import { HallScheme } from "@/components/sections/ArenaSection/HallScheme";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { useGetApiV1CartMy } from "@/api/requests/cart/cart";
 import { customUpdateSearchParams } from "@/lib/utils";
+import { MenuFoldOutlined } from "@ant-design/icons";
 
 interface IArenaSection {
   handleShowSectorsBlock?: () => void;
@@ -79,7 +79,7 @@ export const ArenaSection: React.FC<IArenaSection> = (props) => {
           onClick={() => props.handleShowSectorsBlock()}
           className="absolute z-20 bottom-4 right-4 py-3 px-4 rounded-md flex space-x-2 bg-white items-center cursor-pointer"
         >
-          <MenuIcon className={"text-blue-primary"} />
+          <MenuFoldOutlined className={"text-blue-primary"} />
           <span>{t("list")}</span>
         </div>
       )}

@@ -1651,19 +1651,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
 
 /***/ }),
 
-/***/ "(rsc)/./node_modules/antd/lib/button/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/antd/lib/button/index.js ***!
-  \***********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/* __next_internal_client_entry_do_not_use__  cjs */ 
-const { createProxy } = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-module.exports = createProxy("D:\\olim\\personal\\probilet-kassa-next\\node_modules\\antd\\lib\\button\\index.js");
-
-
-/***/ }),
-
 /***/ "(rsc)/./node_modules/antd/lib/config-provider/index.js":
 /*!********************************************************!*\
   !*** ./node_modules/antd/lib/config-provider/index.js ***!

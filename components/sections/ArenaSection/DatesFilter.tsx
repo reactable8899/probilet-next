@@ -1,8 +1,7 @@
 import React from "react";
 import { useQueryParams } from "@/hooks/useQueryParams";
 import moment from "moment";
-import { useTranslations } from "next-intl";
-// icons
+
 import SelectedLineIcon from "@/public/icons/selected-line.svg";
 import UnSelectedLineIcon from "@/public/icons/unselected-line.svg";
 import { customUpdateSearchParams } from "@/lib/utils";
@@ -14,8 +13,7 @@ interface IDatesFilter {
 }
 
 export const DatesFilter: React.FC<IDatesFilter> = (props) => {
-  const t = useTranslations();
-  const { params, updateSearchParams } = useQueryParams();
+  const { params } = useQueryParams();
 
   const activeEventId = params.get("active_event");
 

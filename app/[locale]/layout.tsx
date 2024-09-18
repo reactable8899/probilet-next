@@ -11,6 +11,7 @@ import ProviderClientIntl from "@/components/provider/provider-client-intl";
 import LoadingScreen from "./loading";
 import Carcas from "@/components/ui/carcas";
 import { ConfigProvider } from "antd";
+import { QueryWrapper } from "@/providers/QueryWrapper";
 
 export const metadata: Metadata = {
   title: "Probilet KASSA",
@@ -31,25 +32,27 @@ const RootLayout = async ({
   }
 
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ProviderClientIntl locale={params.locale}>
-          <AntdRegistry>
-            <Suspense fallback={<LoadingScreen />}>
-              <ConfigProvider
-                theme={{
-                  token: {
-                    colorPrimary: "#dc153d",
-                  },
-                }}
-              >
-                <Carcas children={children} />
-              </ConfigProvider>
-            </Suspense>
-          </AntdRegistry>
-        </ProviderClientIntl>
-      </body>
-    </html>
+    <QueryWrapper>
+      <html lang="en">
+        <body className={inter.className}>
+          <ProviderClientIntl locale={params.locale}>
+            <AntdRegistry>
+              <Suspense fallback={<LoadingScreen />}>
+                <ConfigProvider
+                  theme={{
+                    token: {
+                      colorPrimary: "#dc153d",
+                    },
+                  }}
+                >
+                  <Carcas children={children} />
+                </ConfigProvider>
+              </Suspense>
+            </AntdRegistry>
+          </ProviderClientIntl>
+        </body>
+      </html>
+    </QueryWrapper>
   );
 };
 
